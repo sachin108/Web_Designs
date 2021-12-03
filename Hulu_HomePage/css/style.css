@@ -68,18 +68,78 @@ nav{
 }
 .hc1{
     font-weight: bold;
-
 }
 .hc2{
     margin-top: 10px;
 }
 .trial-btn{
-    width: 200px;
-    height: 40px;
-    margin-top:20px;
-    font-weight: 500;
+    display: inline-block;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 14px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border: none;
+    margin-top: 20px;
+}
+.trial-btn:hover{
+    opacity: 0.8;
 }
 .hc3{
     font-size:10px;
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.subHeader{
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    gap: 40px;
+    align-items: center;
+    padding: 30px 40px;
+    background: linear-gradient(318.68deg,
+                #0f495c 0%,
+                #0d3940 49.72%,
+                #08141f 100%
+    );
+}
+h3{
+    font-size: 26px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.subLink{
+    font-size: 12px;
+    color: #ccc;
+    display: block;
+    margin-top: 5px;
+    text-decoration: underline;
+}
+.btn-outline{
+    background: none;
+    color: white;
+    padding: 10px;
+    width: 130px;
+    letter-spacing: 1px;
+    border-color: white;
+    max-width: 150px;
+    font-weight: bolder;
+    border-radius:5px ;
+}
+.btn-outline:hover{
+    border-color: gray;
+}
+/*Media Queries*/
+@media(max-width:768px){
+    .header .logo{
+        width: 200px;
+    }
+     .header .hc1 .hc2 .hc3 .trial-btn {
+        text-align: center;
+        padding: 0 20px;
+    }
+    .subHeader{
+        grid-template-columns: 1fr;
+    }
 }
