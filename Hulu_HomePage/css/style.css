@@ -59,7 +59,7 @@ nav{
     align-items: center;
     padding-top: 60px;
 }
-.header_content h4{
+h4{
     color:rgb(65, 211, 114);
     text-transform: uppercase;
     font-size: 10px;
@@ -129,6 +129,26 @@ h3{
 }
 .btn-outline:hover{
     border-color: gray;
+}
+.text-xl{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight:bolder;
+}
+.subText{
+    text-align: center;
+    font-size: 1.3rem;
+}
+.covers{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: 20px;
+}
+.covers >img{
+    background: linear-gradient (black );
 }
 /*Media Queries*/
 @media(max-width:768px){
