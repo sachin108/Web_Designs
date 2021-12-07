@@ -83,12 +83,13 @@ ul{
     margin-bottom: 20px;
 }
 .homecards{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
     margin-bottom: 40px;
 }
 .homecards div{
     margin: 5px;
-    border: 1px solid rgb(216, 216, 216);
+    border: 1px solid rgb(218, 218, 218);
 }
 .homecards div h3{
     margin-left: 10px;
@@ -138,4 +139,52 @@ ul{
 }
 .followIcons{
     padding: 8px;
+}
+.links-inner{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    margin:0 auto ;
+    padding: 0 20px ;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 53px;
+}
+.Links{
+    width: 100%;
+    background: rgb(233, 223, 223);
+    padding: 35px 0;
+}
+.Links li{
+    line-height: 2;
+}
+.footer-inner{
+    display: flex;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer li{
+    margin-right: 30px;
+    margin-top: 20px;
+}
+.footer{
+    align-items: center;
+    margin-top: 20px;
+}
+
+
+
+@media(max-width:700px){
+    .homecards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .links-inner{
+        grid-template-columns: repeat(2,1fr);
+
+    }
 }
