@@ -6,6 +6,11 @@
 
     --mainText:black;
     --secondaryText:#4b5156;
+
+    --themeBorder:#24292e;
+
+    --previewBG:rgb(251, 249, 243, 0.8);
+    --previewShadow:#f0ead6;
 }
 
 html, body{
@@ -67,11 +72,7 @@ p, li, span, textarea, label, input{
     margin: 0 auto;
 }
 
-@media screen and (max-width:1200px) {
-    .mainContainer{
-        width: 95%;
-    }
-}
+
 .greeting_wrapper{
     display: grid;
     min-height: 10em;
@@ -87,7 +88,7 @@ p, li, span, textarea, label, input{
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-    
+    height: 420px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3em 20em;
@@ -118,7 +119,6 @@ p, li, span, textarea, label, input{
     width: 15px;
     border-radius: 50%;
     margin: 5px;
-
     box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
@@ -127,12 +127,9 @@ p, li, span, textarea, label, input{
 #dot-3{
     background-color: rgb(63, 202, 63);
 } 
-
 #dot-2{
     background-color: rgb(255, 217, 0);
 }
-
-
 #dot-1{
     background-color: rgb(255, 102, 0);
 }
@@ -149,10 +146,120 @@ p, li, span, textarea, label, input{
 }
 
 .right-col{
+    padding-top: 50px;
+    padding-bottom: 50px;
     grid-area: right-col;
-    
+    display: grid;
+    align-content: center;
 }
+#previewShadow{
+    background-color: var(--previewShadow);
+    width: 300px;
+    height: 180px;
+    padding-left: 30px;
+    padding-top:30px;
+}
+#preview{
+    width: 300px;
+    border:1.5px solid #17a2b8;
+    padding: 15px;  
+    background-color: var(--previewBG); 
+    position: relative;
+}
+.corner{
+    height: 7px;
+    width: 7px;
+    border: 1.5px solid #17a2b8;
+    border-radius: 50%;
+    position: absolute;
+}
+#cornerTL{
+    top: -5px;
+    left: -5px;
+}
+#cornerTR{
+    top: -5px;
+    right: -5px;
+}
+#cornerBL{
+    bottom: -5px;
+    left: -5px;
+}
+#cornerBR{
+    bottom: -5px;
+    right: -5px;
+}
+
+
 .left-col{
     grid-area: left-col;
-    
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#profilePic{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border: 2px solid var(--borderColor);
+    display: block;
+    object-fit: cover;
+}
+.themeOptions{
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    padding-top: 0;
+    justify-content: center;
+}
+
+.theme-dot{
+        border: 2px solid var(--themeBorder);
+        cursor: pointer;
+        background-color: black;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        margin: 5px;
+        box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+        -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+        -moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+}
+
+
+#light-mode{
+    background-color: rgb(238, 235, 228);
+}
+#dark-mode{
+    background-color: rgb(34, 37, 39);
+}
+#green-mode{
+    background-color: rgba(138, 216, 65, 0.815);
+}
+#purple-mode{
+    background-color: rgba(135, 55, 172, 0.74);
+}
+
+.theme-dot:hover{
+    border-width: 5px ;
+}
+
+@media screen and (max-width:1200px) {
+    .mainContainer{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .intro-wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'nav-wrapper'
+        'left-col'
+        'right-col';
+    }
+    .right-col{
+        justify-content: center;
+    }
 }
