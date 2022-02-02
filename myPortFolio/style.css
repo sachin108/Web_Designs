@@ -162,8 +162,8 @@ p, li, span, textarea, label, input{
     background-color: var(--previewShadow);
     width: 300px;
     height: 180px;
-    padding-left: 30px;
-    padding-top:30px;
+    padding-left: 15px;
+    padding-top:15px;
 }
 #preview{
     width: 300px;
