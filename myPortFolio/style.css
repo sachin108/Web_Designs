@@ -162,13 +162,13 @@ p, li, span, textarea, label, input{
     background-color: var(--previewShadow);
     width: 300px;
     height: 180px;
-    padding-left: 15px;
-    padding-top:15px;
+    padding-left: 10px;
+    padding-top:10px;
 }
 #preview{
     width: 300px;
     border:1.5px solid #17a2b8;
-    padding: 15px;  
+    padding: 5px;  
     background-color: var(--previewBG); 
     position: relative;
 }
@@ -264,6 +264,7 @@ p, li, span, textarea, label, input{
     }
     .right-col{
         justify-content: center;
+        padding-top: 15px;
     }
 }
 
