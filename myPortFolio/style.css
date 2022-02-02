@@ -11,11 +11,17 @@
 
     --previewBG:rgb(251, 249, 243, 0.8);
     --previewShadow:#f0ead6;
+
+    --btncolor:black;
 }
 
 html, body{
     padding: 0;
     margin: 0;
+}
+
+body *{
+    transition: 0.5s;
 }
 
 h1, h2, h3, h4, h5, h6,strong{
@@ -119,9 +125,6 @@ p, li, span, textarea, label, input{
     width: 15px;
     border-radius: 50%;
     margin: 5px;
-    box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
-    -webkit-box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
-    -moz-box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
 }
 
 #dot-3{
@@ -137,6 +140,9 @@ p, li, span, textarea, label, input{
 #navigation{
     margin: 0;
     padding: 10px;
+}
+#navigation a{
+    color: var(--mainText);
 }
 
 #navigation li{
@@ -221,9 +227,6 @@ p, li, span, textarea, label, input{
         width: 25px;
         border-radius: 50%;
         margin: 5px;
-        box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
-        -webkit-box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
-        -moz-box-shadow:  10px 5px  inset  rgba(0,0,0,0.75);
 }
 
 
@@ -231,13 +234,13 @@ p, li, span, textarea, label, input{
     background-color: rgb(238, 235, 228);
 }
 #dark-mode{
-    background-color: rgb(34, 37, 39);
+    background-color: #15202b;
 }
 #green-mode{
-    background-color: rgba(138, 216, 65, 0.815);
+    background-color: #606b56;
 }
 #purple-mode{
-    background-color: rgba(135, 55, 172, 0.74);
+    background-color:#46344b;
 }
 
 .theme-dot:hover{
@@ -313,11 +316,47 @@ p, li, span, textarea, label, input{
     padding: 5px;
     padding-bottom: 2px;
     font-size: 14px;
-    color: #4b5156;
 }
 .post-title{
     margin: 0;
     padding: 5px;
     padding-bottom: 2px;
-    color:black;
+}
+
+#submit-btn{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    color: #fff;
+    background-color: var(--btncolor);
+    border: none;
+}
+
+#contact-form{
+    display: block;
+    max-width: 600px;
+    margin: 0 auto ;
+    border: 1px solid var(--borderColor);
+    padding: 15px;
+    border-radius: 5px;
+    background-color: var(--mainColor);
+    margin-bottom: 50px;
+}
+.inputField{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: var(--secondaryColor);
+    border-radius: 5px ;
+    border: 1px solid var(--borderColor);
+    font-size: 14px;
+}
+
+#contact-form label{
+    line-height: 2.7em;
+}
+#contact-form textarea{
+    min-height: 100px;
+    font-size: 14px;
 }

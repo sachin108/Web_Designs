@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet"> 
+  
     <link rel="stylesheet" href="style.css">
+
+    <link id="theme-style" rel="stylesheet" href="">
+  
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -13,7 +17,7 @@
     <section class="s1">
         <div class="mainContainer">
             <div class="greeting_wrapper">
-                <h1>Lorem, ipsum dolor.</h1>
+                <h1>Sachin Rajput</h1>
             </div>
 
             <div class="intro-wrapper">
@@ -34,10 +38,10 @@
                     <img id="profilePic" src="sachin.jpg" alt="sachin108">
                     <h5 style=" text-align:center; line-height:0; ">Personalize Theme</h5>
                     <div class="themeOptions">
-                        <div class="theme-dot" id="light-mode"></div>
-                        <div class="theme-dot" id="dark-mode"></div>
-                        <div class="theme-dot" id="green-mode"></div>
-                        <div class="theme-dot" id="purple-mode"></div>
+                        <div data-mode="light" class="theme-dot" id="light-mode"></div>
+                        <div data-mode="dark" class="theme-dot" id="dark-mode"></div>
+                        <div data-mode="green" class="theme-dot" id="green-mode"></div>
+                        <div data-mode="purple" class="theme-dot" id="purple-mode"></div>
                     </div>
                 </div>
                 <div class="right-col">
@@ -103,7 +107,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Lorem ipsum dolor sit amet consectetur.</h6>
                         <p class="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia amet. Animi.</p>
-                        <a style="margin: 5px; padding-bottom: 5px;" href="">Read More</a>
+                        <a style="margin: 5px; padding-bottom: 5px;" href="post.html">Read More</a>
                     </div>
                 </div>
 
@@ -112,7 +116,7 @@
                     <div class="post-preview">
                         <h6 class="post-title">Lorem ipsum dolor sit amet consectetur.</h6>
                         <p class="post-intro">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, mollitia amet. Animi.</p>
-                        <a style="margin: 5px; padding-bottom: 5px;" href="">Read More</a>
+                        <a style="margin: 5px; padding-bottom: 5px;" href="post.html">Read More</a>
                     </div>
                 </div>
 
@@ -131,9 +135,26 @@
 
     <section class="s2">
         <div class="mainContainer">
-            Contact
+            <h3 style="text-align: center;">Get in Touch</h3>
+            <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" class="inputField" name="name">
+
+                <label for="">Subject</label>
+                <input type="text" class="inputField" name="Subject">
+
+                <label for="">Email</label>
+                <input type="text" class="inputField" name="Email">
+
+                <label for="">Message</label>
+                <textarea class="inputField" name="Message"></textarea>
+
+                <input id="submit-btn" type="submit" value="Send" class="submit-btn">
+            </form>
         </div>
     </section>
+
+    <script type="text/javascript" src="script.js"></script>
 
 </body>
 </html>
