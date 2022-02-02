@@ -264,7 +264,7 @@ p, li, span, textarea, label, input{
     }
     .right-col{
         justify-content: center;
-        padding-top: 15px;
+        margin-top: 10px;
     }
 }
 
